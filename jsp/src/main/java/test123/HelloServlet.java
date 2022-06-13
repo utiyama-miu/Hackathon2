@@ -50,7 +50,18 @@ public class HelloServlet extends HttpServlet {
 	                String col1 = result.getString ( 1 ) ;
 	                String col2 = result.getString ( 2 ) ;
 	                String col3 = result.getString ( 3 ) ;
-	                System.out.println ( col1 + " " + col2 + " " + col3 ) ;
+	             // jspから送られてきた値を受け取る
+	        		col1 = request.getParameter("id");            // 苗字の受け取り
+	        		col2 = request.getParameter("name");           // 名前の受け取り
+	        		col3 = request.getParameter("hometown");; // 年齢の受け取り
+	        		
+	        		// 次の画面(jsp)に値を渡す
+	        		request.setAttribute("id", col1);
+	        		request.setAttribute("name", col2);
+	        		request.setAttribute("hometown", col3);
+	        		
+	        		// 次の画面に遷移
+	        		request.getRequestDispatcher("WEB-INF/SelfIntroduction.jsp").forward(request, response);
 	            }
 	        } catch ( SQLException e ) {
 	          e.printStackTrace() ;
