@@ -31,7 +31,7 @@ public class sample1 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
+        //response.getWriter().append("Served at: ").append(request.getContextPath());
 		request.setCharacterEncoding("UTF-8"); // 文字化け防止
 		String name1 = "";    // 苗字を格納する変数
 		String name2 = "";    // 名前を格納する変数
