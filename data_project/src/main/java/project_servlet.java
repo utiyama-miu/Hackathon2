@@ -33,6 +33,7 @@ public class project_servlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// todoの一覧を保持する変数を宣言
+		//ここから下は人によって変える
 		String url = "jdbc:postgresql://localhost:5432/sampledb";
 		String user = "postgres";
 		String password = "Abematvdaisuki1";
