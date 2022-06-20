@@ -8,10 +8,10 @@
 <title>データベースの接続確認</title>
 </head>
 <body>
-	<% List<String> books = (List<String>)request.getAttribute("books"); %>
-
+	<% List<String> members = (List<String>)request.getAttribute("members"); %>
+	
 	<p>テーブルに保存されている本のタイトル一覧</p>
-	<% for(String name: books) { %>
+	<% for(String name: members) { %>
 		<%= name %><br>
 	<% } %>
 </body>
