@@ -60,7 +60,7 @@ public class delete_servlet extends HttpServlet {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			// TODO 自動生成された catch ブロック
-			e.printStackTrace();
+			e.printStackTrace();aaa
 		}
 
 		// 次の画面に遷移
